@@ -1,0 +1,68 @@
+generated: '2026-08-26'
+method: probed
+source: live GET probes of /.well-known/* on every Nabla Bio host
+note: >-
+  Every /.well-known/ path probed on the canonical host www.nabla.bio returned a real
+  HTTP 404 from the Next.js marketing site. No document was served, nothing was saved,
+  and NO WellKnown or SecurityTxt pointer is emitted — this file records a verified
+  absence, not a presence.
+hit_count: 0
+hosts:
+- host: https://www.nabla.bio
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://nabla-public.s3.us-east-1.amazonaws.com
+  note: >-
+    Nabla Bio's public S3 bucket, which serves the JAM-2 technical report PDF linked
+    from /platform. The bucket denies LIST and any unlisted key with AccessDenied, so
+    no discovery surface is served from it.
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
+soft_404_control:
+  host: https://nabla-seven.vercel.app
+  note: >-
+    The Vercel deployment host named in robots.txt Host: is an SPA catch-all that
+    answers HTTP 200 with the same ~4.5KB HTML shell for EVERY /.well-known/* path,
+    including /.well-known/agent-card.json. These 200s are NOT documents and were
+    rejected. The canonical www.nabla.bio host returns honest 404s for the same paths.
+  probes:
+  - path: /.well-known/agent-card.json
+    status: 200
+    body: HTML shell
+    accepted: false
+  - path: /.well-known/security.txt
+    status: 200
+    body: HTML shell
+    accepted: false
+  - path: /openapi.json
+    status: 200
+    body: HTML shell
+    accepted: false

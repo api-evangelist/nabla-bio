@@ -1,7 +1,18 @@
 aid: nabla-bio
 name: Nabla Bio
-description: 'Nabla Bio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Nabla Bio is a Cambridge, Massachusetts biotechnology company founded
+  in 2021 as a Harvard spinout, building generative protein design systems for de novo
+  biologics discovery. Its platform is JAM (Joint Atomic Modeling), a multimodal generative
+  model trained on large-scale protein sequence and structure data that takes partial
+  molecular context — a disease target or an epitope — and computationally designs
+  the rest, producing de novo antibodies, VHH-Fc and full-length mAb formats, epitope
+  scaffolds, cytokines, receptor traps and multi-domain multispecifics. The company
+  pairs the model with an integrated wet lab that feeds mammalian, cellular and in
+  vivo measurements back into training, and has published work on de novo design of
+  GPCR-targeting antibodies against CXCR4 and CXCR7. Nabla Bio engages exclusively
+  through pharmaceutical partnership and molecule licensing — with AstraZeneca, Bristol
+  Myers Squibb and Takeda — and does not operate a public developer program, API, SDK
+  or self-serve platform.'
 url: https://raw.githubusercontent.com/api-evangelist/nabla-bio/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +23,15 @@ created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Biotechnology
+- Life Sciences
+- Drug Discovery
+- Protein Design
+- Artificial Intelligence
+- Machine Learning
+- Antibodies
+- Generative Models
+- Pharmaceuticals
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,50 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/nabla-bio-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/nabla-bio_stock/
+  url: https://www.nabla.bio/
+- type: Platform
+  url: https://www.nabla.bio/platform
+- type: Partner
+  url: https://www.nabla.bio/partner
+- type: News
+  url: https://www.nabla.bio/news
+- type: Team
+  url: https://www.nabla.bio/team
+- type: Careers
+  url: https://www.nabla.bio/careers
+- type: PrivacyPolicy
+  url: https://www.nabla.bio/privacy-policy
+- type: Plans
+  url: plans/nabla-bio-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/nabla-bio-rate-limits.yml
+- type: Packages
+  url: packages/nabla-bio-packages.yml
+- type: LLMsTxt
+  url: llms/nabla-bio-llms.txt
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Nabla Bio sells generative protein design through pharmaceutical partnership and
+    molecule licensing only — its five-page Vercel-hosted marketing site has no docs,
+    developer or API route at all, and every spec and .well-known path returns a real
+    404 on www.nabla.bio.
+  evidence:
+  - url: https://www.nabla.bio/openapi.json
+    status: 404
+  - url: https://www.nabla.bio/docs
+    status: 404
+  - url: https://www.nabla.bio/.well-known/agent-card.json
+    status: 404
+  - url: https://www.nabla.bio/partner
+    status: 200
+  checked: '2026-08-26'

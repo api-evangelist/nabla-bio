@@ -1,0 +1,20 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.nabla.bio/partner
+note: >-
+  Nabla Bio publishes no pricing, plans or tiers of any kind. There is no /pricing page
+  on nabla.bio and no self-serve product to price. The company states two engagement
+  models on /partner — platform collaboration ("We collaborate with leading
+  pharmaceutical companies to embed our AI-driven, wet-lab-integrated platform across
+  their discovery pipelines") and molecule licensing ("license these molecules to
+  partners with deep development expertise") — both routed to bd@nabla.bio. Commercial
+  terms are negotiated per partnership and are not public. An honest zero.
+plan_count: 0
+plans: []
+engagement_model: partnership-and-licensing
+contact: bd@nabla.bio
+evidence:
+- url: https://www.nabla.bio/partner
+  status: 200
+- url: https://www.nabla.bio/
+  status: 200

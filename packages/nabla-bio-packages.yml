@@ -1,0 +1,30 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  npm registry, PyPI, crates.io, GitHub org search, and the Nabla Bio website
+  (nabla.bio, /platform, /partner)
+note: >-
+  No first-party Nabla Bio client library exists on any public registry. Nabla Bio
+  publishes no SDK, CLI or API, and its GitHub organization (github.com/nabla-bio)
+  has zero public repositories. NO SDKs pointer is emitted — this is a verified
+  absence.
+package_count: 0
+packages: []
+searched_registries:
+- registry: npm
+  queries: [nabla-bio, nablabio, nabla-jam]
+  result: 404 on every candidate
+- registry: pypi
+  queries: [nabla-bio, nablabio, nabla-jam]
+  result: 404 on every candidate
+- registry: crates.io
+  queries: [nabla-bio]
+  result: no first-party crate
+- registry: github
+  queries: [github.com/nabla-bio]
+  result: organization exists with no public repositories
+name_collision_warning: >-
+  Do NOT attribute the npm/CocoaPods packages published by "Nabla" (nabla.com — the
+  French ambient-AI-for-clinicians company, which ships a Core API, an iOS SDK and a
+  sample app) to Nabla Bio. They are unrelated companies that share a first name.
+  Nabla Bio is the Cambridge, MA generative protein design company at nabla.bio.

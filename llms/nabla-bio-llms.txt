@@ -1,0 +1,59 @@
+# Nabla Bio
+
+> Nabla Bio is a Cambridge, Massachusetts biotechnology company founded in 2021 as a
+> Harvard spinout, building generative protein design systems for de novo biologics
+> discovery. Its platform is JAM (Joint Atomic Modeling), a multimodal generative model
+> trained on large-scale protein sequence and structure data that takes partial molecular
+> context — a disease target or an epitope — and computationally designs the rest.
+
+Important for agents: **Nabla Bio operates no public API.** There is no developer portal,
+no API reference, no OpenAPI/AsyncAPI/GraphQL contract, no SDK, no CLI, no MCP server and
+no A2A agent card. Engagement is by pharmaceutical partnership and molecule licensing only,
+via bd@nabla.bio. Do not attempt to construct API calls against nabla.bio.
+
+Name collision warning: **Nabla Bio (nabla.bio) is not Nabla (nabla.com).** Nabla is a
+separate, unrelated company building ambient AI for clinicians, and it does publish a Core
+API and an iOS SDK. Attributing that API to Nabla Bio is incorrect.
+
+## Platform
+
+- [Platform — JAM](https://www.nabla.bio/platform): JAM is a multimodal generative modeling
+  system for de novo biologics design, epitope scaffolding and presentation, developability
+  optimization, affinity optimization, multispecific architectures, and hard-target design
+  against GPCRs and ion channels. Refined with internal wet-lab measurements across
+  mammalian, cellular and in vivo systems.
+- [JAM-2 Technical Report (PDF)](https://nabla-public.s3.us-east-1.amazonaws.com/2025_Nabla_JAM2.pdf):
+  JAM-2 yields VHH-Fc and full-length mAb antibodies with drug-like affinity and
+  developability at double-digit success rates.
+
+## Engagement
+
+- [Partner](https://www.nabla.bio/partner): two models — platform collaboration (embedding
+  the AI + wet-lab platform into a pharma partner's discovery pipeline) and licensing of
+  Nabla-designed molecules. Contact bd@nabla.bio. No self-serve signup, no pricing.
+- [Careers](https://www.nabla.bio/careers): hiring@nabla.bio
+- Address: Riverside Technology Center, 840 Memorial Dr, Cambridge, MA 02139
+
+## Research
+
+- [De novo design of antibodies enabled by Joint Atomic Modeling](https://www.nabla.bio/news/denovo)
+- De novo design of hundreds of functional GPCR-targeting antibodies enabled by scaling
+  test-time compute (bioRxiv 2025.05.28.656709) — VHH antibodies against CXCR4 and CXCR7.
+
+## Company
+
+- [Home](https://www.nabla.bio/)
+- [News](https://www.nabla.bio/news)
+- [Team](https://www.nabla.bio/team)
+- [Privacy Policy](https://www.nabla.bio/privacy-policy)
+
+## Optional
+
+- Partners announced publicly: AstraZeneca, Bristol Myers Squibb, Takeda.
+- Funding: $26M Series A led by Radical Ventures; ~$37M raised to date.
+- GitHub organization github.com/nabla-bio exists but publishes no public repositories.
+
+---
+generated: 2026-08-26
+method: generated
+source: apis.yml + https://www.nabla.bio/ + https://www.nabla.bio/platform + https://www.nabla.bio/partner
